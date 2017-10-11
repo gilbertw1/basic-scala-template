@@ -4,7 +4,7 @@ import Keys._
 object BuildSettings {
   val buildOrganization = "com.github.gilbertw1"
   val buildVersion      = "0.1.0"
-  val buildScalaVersion = "2.12.1"
+  val buildScalaVersion = "2.12.3"
 
   val settings = Seq (
     organization := buildOrganization,
@@ -17,15 +17,15 @@ object Resolvers {
 }
 
 object Dependencies {
-  val akkaVersion = "2.4.17"
+  val akkaVersion = "2.5.6"
 
   val akkaActor = "com.typesafe.akka" %% "akka-actor" % akkaVersion
   val akkaStream = "com.typesafe.akka" %% "akka-stream" % akkaVersion
   val akkaSlf4j = "com.typesafe.akka" %% "akka-slf4j" % akkaVersion
-  val akkaHttp = "com.typesafe.akka" %% "akka-http" % "10.0.3"
+  val akkaHttp = "com.typesafe.akka" %% "akka-http" % "10.0.10"
 
   val scalaAsync = "org.scala-lang.modules" %% "scala-async" % "0.9.6"
-  val playJson = "com.typesafe.play" %% "play-json" % "2.6.0-M2"
+  val playJson = "com.typesafe.play" %% "play-json" % "2.6.6"
 
   val scalatest = "org.scalatest" %% "scalatest" % "3.0.1" % "test"
 
